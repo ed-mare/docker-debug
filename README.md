@@ -8,5 +8,7 @@ Docker images for debugging containers or for accessing/debugging services.
 
 Other tools:
 
+```shell
 docker pull sysdig/sysdig
 docker run -it --pid=container:yourcontainerid --net=container:yourcontainerid --cap-add sys_admin --cap-add sys_ptrace  /bin/bash
+```
