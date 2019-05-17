@@ -13,7 +13,7 @@
 #
 # 
 # Download... 
-# curl -S https://raw.githubusercontent.com/ed-mare/docker-debug/master/redis/Dockerfile > Dockerfile
+# curl -S https://raw.githubusercontent.com/ed-mare/docker-debug/master/general/Dockerfile > Dockerfile
 #
 # Build...
 # docker build -t debugtools .
