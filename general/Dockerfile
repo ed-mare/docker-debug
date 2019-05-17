@@ -19,7 +19,7 @@
 # docker build -t debugtools .
 #
 # Use...
-# run -it --pid=container:<container> --net=container:<container> --cap-add sys_admin --cap-add sys_ptrace debugtools /bin/bash
+# docker run -it --pid=container:<container> --net=container:<container> --cap-add sys_admin --cap-add sys_ptrace debugtools /bin/bash
 #
 # In bash session:
 # ps aux # shows processes in container
