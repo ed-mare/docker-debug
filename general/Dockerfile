@@ -26,20 +26,20 @@
 # strace -p <pid>
 # lsof
 #
-# Additional tools:
+# Other tools to use...
+#
 # docker pull sysdig/sysdig
 # run -it --pid=container:<container> --net=container:<container> --cap-add sys_admin --cap-add sys_ptrace  /bin/bash
 
 FROM debian:stretch
 
+# procps is for ps command
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
     ca-certificates \
     libssl-dev \
     curl \
+    procps \
     lsof \
     strace \
 	&& rm -rf /var/lib/apt/lists/*
-
-# https://github.com/draios/sysdig/wiki/How-to-Install-Sysdig-for-Linux
-RUN curl -s https://s3.amazonaws.com/download.draios.com/stable/install-sysdig | bash
