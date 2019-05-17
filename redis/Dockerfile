@@ -1,3 +1,6 @@
+# Download... 
+# curl -S https://raw.githubusercontent.com/ed-mare/docker-debug/master/redis/Dockerfile > Dockerfile
+#
 # Build...
 # docker build -t 'redis-client' ./
 #
